@@ -16,8 +16,8 @@ The project includes:
 ### 🔍 Visual Previews
 
 #### Dashboard: Logistics Tracking
-![Logistics Tracking](https://user-images.githubusercontent.com/yourusername/placeholder.png)
+![Logistics Tracking](https://user-images.githubusercontent.com/jackchengtan/placeholder.png)
 
 #### Dashboard: Cost by Transport Mode
-![Shipment cost view by transport mode](https://user-images.githubusercontent.com/yourusername/placeholder.png)
+![Shipment cost view by transport mode](https://user-images.githubusercontent.com/jackchengtan/placeholder.png)
 
