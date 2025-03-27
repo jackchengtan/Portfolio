@@ -19,5 +19,5 @@ The project includes:
 ![Logistics Tracking](PowerBI/Shenzhen ZCD International Logistics/Shenzhen ZCD International Logistics.png)
 
 #### Dashboard: Cost by Transport Mode
-![Shipment cost view by transport mode](https://user-images.githubusercontent.com/jackchengtan/placeholder.png)
+![Shipment cost view by transport mode](https://user-images.githubusercontent.com/jackchengtan/PowerBI/Shenzhen ZCD International Logistics/Shenzhen ZCD International Logistics.png)
 
