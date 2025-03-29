@@ -4,22 +4,19 @@ This project showcases a professional, interactive Power BI dashboard visualizin
 
 ---
 
-### 📊 Overview
-The project includes:
-- **Shipment tracking** by region in China
-- **Cost breakdown** by transport mode (Air, Rail, Sea)
-- **Monthly variance reductions** (25% → 10%)
-- **Freight cost, order delay, processing time, and more**
-
----
-
 ### 🔍 Visual Previews
 
-#### Dashboard: Logistics Tracking
-![Logistics Tracking](https://user-images.githubusercontent.com/yourusername/logistics-tracking.png)
+#### Shipment Overview
+<img width="812" alt="Image" src="https://github.com/user-attachments/assets/2089d9de-824e-41f7-a049-c2180e7c5e11" />
 
-#### Dashboard: Cost by Transport Mode
-![Shipment cost view by transport mode](https://user-images.githubusercontent.com/yourusername/transport-mode-cost.png)
+#### Transport Mode Analysis
+<img width="813" alt="Image" src="https://github.com/user-attachments/assets/0f97bffa-4fa8-4ceb-b74e-d6f1b0c122c5" />
+
+#### Warehouse & Supplier Health
+<img width="589" alt="Image" src="https://github.com/user-attachments/assets/1f1c9cd8-9c7d-4930-98c3-6d45cff5043a" />
+
+#### Customer Satisfaction
+<img width="654" alt="Image" src="https://github.com/user-attachments/assets/9060d128-e425-486c-a3c5-ab6a7b3fc2eb" />
 
 ---
 
