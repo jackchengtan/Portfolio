@@ -10,13 +10,14 @@ This project showcases a professionally designed Power BI dashboard for **ZCD In
 <img width="812" alt="Image" src="https://github.com/user-attachments/assets/d5e123eb-9757-4b7b-9b16-9bc7949b9caa" />
 
 #### Transport Mode Analysis
-![Cost by Mode](https://user-images.githubusercontent.com/yourusername/transport-mode-cost.png)
+<img width="813" alt="Image" src="https://github.com/user-attachments/assets/031657f2-82e4-4dc4-9846-e9a8d1229bc8" />
 
 #### Warehouse & Supplier Health
-![Lead Time](https://user-images.githubusercontent.com/yourusername/lead-time-analysis.png)
+<img width="589" alt="Image" src="https://github.com/user-attachments/assets/98e2bba9-5821-4966-9bed-10fa9edd78a2" />
 
 #### Customer Satisfaction
-![Lead Time](https://user-images.githubusercontent.com/yourusername/lead-time-analysis.png)
+<img width="654" alt="Image" src="https://github.com/user-attachments/assets/eb4b3884-3188-4dc7-88fc-157a42a09f38" />
+
 
 ---
 
