@@ -1,0 +1,40 @@
+# ZCD Logistics Dashboard 📦📊
+
+This repository contains the **Power BI dashboard file** `ZCD Logistics Dashboard.pbix`, developed to analyze key logistics and transport cost metrics for ZCD International Logistics.
+
+## 📁 File
+
+- **ZCD Logistics Dashboard.pbix**  
+  A Power BI report visualizing shipment costs, transport modes, regional performance, and monthly cost variance.
+
+## 🧩 Key Features
+
+- Shipment cost analysis across **Air**, **Rail**, and **Sea** modes.
+- Monthly cost variance reduction tracking.
+- Warehouse efficiency and freight cost metrics.
+- Regional shipment performance and average delay tracking.
+- Interactive filters and slicers by **Month**, **Region**, and **Transport Mode**.
+
+## 🔧 Tools Used
+
+- Power BI Desktop
+- Data Sources: CSVs generated from cleaned logistics datasets
+- DAX for calculated metrics and visual logic
+
+## 💼 Use Case
+
+Designed to support **logistics cost optimization**, **performance review**, and **data-driven decision making** for transport operations at ZCD Logistics.
+
+## 📌 Notes
+
+- All data used in this dashboard is **anonymized** and **simulated** for portfolio/demo purposes.
+- For interactive online demo (if hosted), please refer to the **Power BI service link** (add link if available).
+
+---
+
+### 👤 Author
+
+**Jack Tan**  
+Graduate in International Business + Computer Science  
+Fluent in Mandarin & English | Data-Driven Business Analyst  
+[LinkedIn Profile](https://www.linkedin.com/in/YOUR_USERNAME) _(replace with actual link)_
