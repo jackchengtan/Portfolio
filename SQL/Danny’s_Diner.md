@@ -1,5 +1,9 @@
 # Case Study #1 - Danny's Diner #
 
+Customer Spending and Loyalty Analysis using SQL
+
+Danny’s Diner is a customer analytics case study focused on restaurant purchasing behaviour and loyalty performance. I used SQL to analyse customer spend, visit frequency, favourite menu items, and the effect of a membership programme. The aim was to turn raw transactional data into practical recommendations for retention and loyalty design.
+
 ![image](https://user-images.githubusercontent.com/77920592/199073813-1b1d6aa7-105d-4ab0-9dab-0444b0ef6095.png)
 
 # Introduction #
@@ -297,9 +301,10 @@ from rank_cte
 
 # Findings and Recommendations #
  
+Ramen appears to be the most frequently purchased menu item, making it the strongest candidate for promotion or product expansion.
+Customers A and B generated higher tracked loyalty value because they joined the membership programme and accumulated points.
+Pre-membership and post-membership behaviour can be segmented cleanly, which makes this dataset useful for designing targeted offers.
 
-- Ramen is the most popular item, followed by curry and sushi. Danny might want to introduce ramen with more varieties/flavours.
-- Customer B visited the diner the most and he/she seems to enjoy three dishes equally. 
-- Customer A and B’s last ordered items are sushi and curry. These items might be the deciding factors for them to sign up the membership as Customer C is not yet member and he/she has not yet tried these two items!
+Test a simple loyalty incentive such as member-only bonus points or limited-time item multipliers to encourage repeat visits and larger basket sizes.and he/she has not yet tried these two items!
 - There is no confirmed  evidence showing customers visit more after signing up membership. Danny might want to offer a 5% discount for all members, or a system to redeem points. 
 - Customers who have signed up the membership seem to spend more at the diner. 
