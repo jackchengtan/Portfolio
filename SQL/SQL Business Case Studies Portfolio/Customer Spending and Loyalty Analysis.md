@@ -1,4 +1,4 @@
-# Customer Spending and Loyalty Analysis using SQL #
+# Customer Spending and Loyalty Analysis #
 
 ![image](https://user-images.githubusercontent.com/77920592/199073813-1b1d6aa7-105d-4ab0-9dab-0444b0ef6095.png)
 
