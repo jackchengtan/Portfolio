@@ -1,26 +1,18 @@
-# Case Study #2 - Pizza Runner #
+# Pizza Delivery Operations Analysis #
 
 ![image](https://user-images.githubusercontent.com/77920592/199072945-1bdf34ab-bc60-49eb-bcf9-0f21fb9dbe5d.png)
 
 # Introduction #
 
-Did you know that over 115 million kilograms of pizza is consumed daily worldwide??? (Well according to Wikipedia anyway…)
-
-Danny was scrolling through his Instagram feed when something really caught his eye - “80s Retro Styling and Pizza Is The Future!”
-
-Danny was sold on the idea, but he knew that pizza alone was not going to help him get seed funding to expand his new Pizza Empire - so he had one more genius idea to combine with it - he was going to Uberize it - and so Pizza Runner was launched!
-
-Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runner Headquarters (otherwise known as Danny’s house) and also maxed out his credit card to pay freelance developers to build a mobile app to accept orders from customers.
+Pizza Runner is an operations analytics case study focused on delivery performance, order composition, preparation time, customer modifications, and delivery profitability. I used SQL to clean messy operational data, calculate order and runner metrics, and produce insights that could improve delivery efficiency and customer experience.
 
 # Case Study Questions #
 
-This case study has LOTS of questions - they are broken up by area of focus including:
-
-- Pizza Metrics
-- Runner and Customer Experience
-- Ingredient Optimisation
-- Pricing and Ratings
-- Bonus DML Challenges (DML = Data Manipulation Language)
+How many pizzas and orders were successfully delivered?
+How efficiently are runners completing deliveries?
+Is preparation time linked to order size?
+Which extras and exclusions are most common?
+What is the profitability of delivered orders after runner costs?
 
 Each of the following case study questions can be answered using a single SQL statement.
 
@@ -373,14 +365,13 @@ order_time, pickup_time, duration, distance
 ```
 ![image](https://user-images.githubusercontent.com/77920592/199334749-6cfa1e30-7208-468d-932e-86ea3d80e5ea.png)
 
-### If a Meat Lovers pizza was $12 and Vegetarian $10 fixed prices with no cost for extras and each runner is paid $0.30 per kilometre traveled - how much money does Pizza Runner have left over after these deliveries? ###
-```sql
-declare @basecost int
-set @basecost = 138;
-select @basecost - 
-sum (case when distance is not null then distance*0.30 else null end) as Delivery_Charges
-from #runner_orders ro
-where cancellation is null
-```
-![image](https://user-images.githubusercontent.com/77920592/199334822-bb3dd07a-badd-4989-8312-1ea2e628b8e4.png)
+# Key insights #
 
+Delivery data required cleaning before analysis because important operational fields were stored as text and null-like strings.
+Runner performance can be evaluated using pickup delay, successful delivery percentage, and delivery speed.
+Customer modifications such as extras and exclusions provide useful input for menu and pricing design.
+Revenue analysis becomes more realistic when runner delivery costs are deducted from gross sales.
+
+# Recommendation #
+
+Standardize operational data capture at source and use pickup delay + speed metrics to monitor runner efficiency by shift or peak demand period.
