@@ -6,19 +6,25 @@
 
 Pizza Runner is an operations analytics case study focused on delivery performance, order composition, preparation time, customer modifications, and delivery profitability. I used SQL to clean messy operational data, calculate order and runner metrics, and produce insights that could improve delivery efficiency and customer experience.
 
-# Case Study Questions #
+# Problem #
 
-How many pizzas and orders were successfully delivered?
-How efficiently are runners completing deliveries?
-Is preparation time linked to order size?
-Which extras and exclusions are most common?
-What is the profitability of delivered orders after runner costs?
+Raw data contained:
+inconsistent formats (text distances, null values)
+no visibility into delivery efficiency
+unclear profitability
 
-Each of the following case study questions can be answered using a single SQL statement.
+# Insights #
 
-Again, there are many questions in this case study - please feel free to pick and choose which ones you’d like to try!
+Data cleaning is essential before operational analysis
+Delivery efficiency varies significantly between runners
+Prep time increases with order size
+Extras and exclusions highlight customer preferences
 
-Before you start writing your SQL queries however - you might want to investigate the data, you may want to do something with some of those null values and data types in the customer_orders and runner_orders tables!
+# Recommendation #
+
+Standardise data collection (critical)
+Optimise runner allocation during peak hours
+Use delivery metrics (speed, delay) to monitor performance
 
 ## Data Cleaning ##
 ```sql
@@ -364,14 +370,3 @@ group by co.customer_id, co.order_id, ro.runner_id, rating,
 order_time, pickup_time, duration, distance
 ```
 ![image](https://user-images.githubusercontent.com/77920592/199334749-6cfa1e30-7208-468d-932e-86ea3d80e5ea.png)
-
-# Key insights #
-
-Delivery data required cleaning before analysis because important operational fields were stored as text and null-like strings.
-Runner performance can be evaluated using pickup delay, successful delivery percentage, and delivery speed.
-Customer modifications such as extras and exclusions provide useful input for menu and pricing design.
-Revenue analysis becomes more realistic when runner delivery costs are deducted from gross sales.
-
-# Recommendation #
-
-Standardize operational data capture at source and use pickup delay + speed metrics to monitor runner efficiency by shift or peak demand period.
