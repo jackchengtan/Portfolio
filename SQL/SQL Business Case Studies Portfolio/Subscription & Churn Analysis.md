@@ -1,4 +1,4 @@
-# Case Study #3 - Foodie-Fi #
+# Subscription & Churn Analysis #
 
 ![image](https://user-images.githubusercontent.com/77920592/199336231-409a6332-05f4-4253-8139-5e1e327b205d.png)
 
@@ -222,4 +222,14 @@ plan_id = 2 and plan_new = 1 and —current plan is 2, new plan is 1
 start_date < ‘2020-12-31’
 ```
 ![image](https://user-images.githubusercontent.com/77920592/192091429-a46da952-e070-4896-badd-8e0af216c2c7.png)
+
+# Key Insights #
+
+Subscription businesses rely heavily on retention and churn control
+Trial → paid conversion is critical
+Churn behaviour indicates pricing or product issues
+
+# Recommendation #
+Introduce retention incentives after trial period
+Analyse churn timing to improve onboarding
 
