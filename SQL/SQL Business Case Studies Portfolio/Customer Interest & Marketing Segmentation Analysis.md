@@ -1,22 +1,29 @@
-# Case Study #8 - Fresh Segments #
+# Customer Interest & Marketing Segmentation Analysis #
 
 ![image](https://user-images.githubusercontent.com/77920592/199337145-c5e9eb60-a03e-41da-922d-184c359c5b3f.png)
 
 # Introduction #
 
-Danny created Fresh Segments, a digital marketing agency that helps other businesses analyse trends in online ad click behaviour for their unique customer base.
+Analysed customer interest data to identify trends, segment audiences, and support targeted marketing strategies.
 
-Clients share their customer lists with the Fresh Segments team who then aggregate interest metrics and generate a single dataset worth of metrics for further analysis.
+## Problem ##
 
-In particular - the composition and rankings for different interests are provided for each client showing the proportion of their customer list who interacted with online assets related to each interest for each month.
+The business needed to:
+understand customer interests
+segment audiences effectively
+clean inconsistent data
 
-Danny has asked for your assistance to analyse aggregated metrics for an example client and provide some high level insights about the customer list and their interests.
+## Insights ##
 
-# Case Study Questions #
+Data cleaning is critical due to null and inconsistent values
+Certain interests consistently rank higher across segments
+Engagement patterns change over time
 
-The following questions can be considered key business questions that are required to be answered for the Fresh Segments team.
+## Recommendation ##
 
-Most questions can be answered using a single query however some questions are more open ended and require additional thought and not just a coded solution!
+Focus marketing on high-interest segments
+Maintain clean and structured data pipelines
+Use segmentation for personalised campaigns
 
 ## Data Exploration and Cleansing ##
 
