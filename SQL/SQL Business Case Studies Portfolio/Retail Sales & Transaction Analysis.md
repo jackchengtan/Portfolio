@@ -1,18 +1,29 @@
-# Case Study #7 - Balanced Tree Clothing Co. #
+# Retail Sales & Transaction Analysis #
 
 ![image](https://user-images.githubusercontent.com/77920592/199336620-547c4ca5-95f3-4f0c-a784-49ec138fa24f.png)
 
 # Introduction #
 
-Balanced Tree Clothing Company prides themselves on providing an optimised range of clothing and lifestyle wear for the modern adventurer!
+Analysed sales and transaction data to evaluate product performance, revenue distribution, and discount impact.
 
-Danny, the CEO of this trendy fashion company has asked you to assist the team’s merchandising teams analyse their sales performance and generate a basic financial report to share with the wider business.
+## Problem ##
 
-# Case Study Questions #
+The business needed to:
+track product-level performance
+understand revenue drivers
+evaluate discount effectiveness
 
-The following questions can be considered key business questions and metrics that the Balanced Tree team requires for their monthly reports.
+## Insights ##
 
-Each question can be answered using a single query - but as you are writing the SQL to solve each individual problem, keep in mind how you would generate all of these metrics in a single SQL script which the Balanced Tree team can run each month.
+Revenue is concentrated in key product categories
+Discounts significantly affect total revenue
+Transaction size varies across customers
+
+## Recommendation ##
+
+Focus on high-performing products
+Optimise discount strategy to protect margins
+Increase average transaction value through bundling
 
 ## High Level Sales Analysis ##
 
