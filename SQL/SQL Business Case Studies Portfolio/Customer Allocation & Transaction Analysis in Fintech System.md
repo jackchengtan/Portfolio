@@ -2,24 +2,24 @@
 
 ![image](https://user-images.githubusercontent.com/77920592/199336948-204f4345-718a-4931-b65f-94b76c2e3762.png)
 
-# Introduction #
+## Introduction ##
 
 Analysed customer node allocation and transaction data to understand system behaviour and support infrastructure planning.
 
-# Problem #
+## Problem ##
 
 The business needed to:
 track customer distribution across regions
 understand data storage demand
 analyse transaction activity
 
-# Insights #
+## Insights ##
 
 Customer allocation varies across regions
 Movement between nodes impacts system efficiency
 Transaction behaviour directly influences infrastructure needs
 
-# Recommendation #
+## Recommendation ##
 
 Optimise regional node allocation
 Forecast demand based on transaction growth
