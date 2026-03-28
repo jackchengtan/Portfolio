@@ -1,11 +1,10 @@
-# Case Study #1 - Danny's Diner #
+# Customer Spending and Loyalty Analysis using SQL #
 
 ![image](https://user-images.githubusercontent.com/77920592/199073813-1b1d6aa7-105d-4ab0-9dab-0444b0ef6095.png)
 
 # Introduction #
 
-Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
-Danny’s Diner is in need of your assistance to help the restaurant stay afloat – the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
+Danny’s Diner is a customer analytics case study focused on restaurant purchasing behaviour and loyalty performance. I used SQL to analyse customer spend, visit frequency, favourite menu items, and the effect of a membership programme. The aim was to turn raw transactional data into practical recommendations for retention and loyalty design.
 
 # Problem Statement #
 
@@ -295,11 +294,12 @@ from rank_cte
 ![image](https://user-images.githubusercontent.com/77920592/192090956-f719eff7-e926-4f60-8ae7-6c47f877fa7c.png)
 
 
-# Findings and Recommendations #
- 
+# Key insight s# 
 
-- Ramen is the most popular item, followed by curry and sushi. Danny might want to introduce ramen with more varieties/flavours.
-- Customer B visited the diner the most and he/she seems to enjoy three dishes equally. 
-- Customer A and B’s last ordered items are sushi and curry. These items might be the deciding factors for them to sign up the membership as Customer C is not yet member and he/she has not yet tried these two items!
-- There is no confirmed  evidence showing customers visit more after signing up membership. Danny might want to offer a 5% discount for all members, or a system to redeem points. 
-- Customers who have signed up the membership seem to spend more at the diner. 
+Ramen appears to be the most frequently purchased menu item, making it the strongest candidate for promotion or product expansion.
+Customers A and B generated higher tracked loyalty value because they joined the membership programme and accumulated points.
+Pre-membership and post-membership behaviour can be segmented cleanly, which makes this dataset useful for designing targeted offers.
+
+# Recommendation #
+
+Test a simple loyalty incentive such as member-only bonus points or limited-time item multipliers to encourage repeat visits and larger basket sizes.
