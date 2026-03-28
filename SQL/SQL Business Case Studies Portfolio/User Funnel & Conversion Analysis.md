@@ -1,12 +1,29 @@
-# Case Study #6 - Clique Bait #
+# User Funnel & Conversion Analysis #
 
 ![image](https://user-images.githubusercontent.com/77920592/199336817-b98b58f0-9142-427f-97ba-0faa30926224.png)
 
 # Introduction #
 
-Clique Bait is not like your regular online seafood store - the founder and CEO Danny, was also a part of a digital data analytics team and wanted to expand his knowledge into the seafood industry!
+Analysed user behaviour data to measure conversion rates, identify drop-off points, and evaluate engagement across a digital platform.
 
-In this case study - you are required to support Danny’s vision and analyse his dataset and come up with creative solutions to calculate funnel fallout rates for the Clique Bait online store.
+## Problem ##
+
+The business lacked visibility into:
+conversion funnel performance
+user journey drop-off
+engagement across pages
+
+## Insights ##
+
+Significant drop-off occurs between checkout and purchase
+Conversion rate is a critical performance metric
+Page views highlight product interest patterns
+
+## Recommendation ##
+
+Optimise checkout flow to reduce friction
+Improve UX on high-drop-off pages
+Focus marketing on high-engagement products
 
 ## A. Digital Analysis ##
 
