@@ -1,24 +1,29 @@
-# Case Study #5 - Data Mart #
+# Sales Impact Analysis of Operational Change #
 
 ![image](https://user-images.githubusercontent.com/77920592/199336394-1fb83486-3c08-4fa1-a088-6792ce560792.png)
 
 # Introduction #
 
-Data Mart is Danny’s latest venture and after running international operations for his online supermarket that specialises in fresh produce - Danny is asking for your support to analyse his sales performance.
+Evaluated the impact of a major operational change (sustainable packaging rollout) on sales performance.
 
-In June 2020 - large scale supply changes were made at Data Mart. All Data Mart products now use sustainable packaging methods in every single step from the farm all the way to the customer.
+# Problem #
 
-Danny needs your help to quantify the impact of this change on the sales performance for Data Mart and it’s separate business areas.
+The business needed to:
+quantify impact of operational change
+identify affected segments and regions
+assess risk of future changes
 
-The key business question he wants you to help him answer are the following:
+# Insights # 
 
-- What was the quantifiable impact of the changes introduced in June 2020?
-- Which platform, region, segment and customer types were the most impacted by this change?
-- What can we do about future introduction of similar sustainability updates to the business to minimise impact on sales?
+Sales performance shifted after the operational change
+Certain customer segments were more affected
+Regional differences highlight uneven impact
 
-# Case Study Questions #
+# Recommendation #
 
-The following case study questions require some data cleaning steps before we start to unpack Danny’s key business questions in more depth.
+Test operational changes on smaller segments first
+Monitor key KPIs during rollout
+Adjust strategy based on segment sensitivity
 
 ## Data Cleansing Steps ##
 
