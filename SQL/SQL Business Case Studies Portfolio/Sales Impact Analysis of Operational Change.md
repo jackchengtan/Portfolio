@@ -2,24 +2,24 @@
 
 ![image](https://user-images.githubusercontent.com/77920592/199336394-1fb83486-3c08-4fa1-a088-6792ce560792.png)
 
-# Introduction #
+## Introduction ##
 
 Evaluated the impact of a major operational change (sustainable packaging rollout) on sales performance.
 
-# Problem #
+## Problem ##
 
 The business needed to:
 quantify impact of operational change
 identify affected segments and regions
 assess risk of future changes
 
-# Insights # 
+## Insights ##
 
 Sales performance shifted after the operational change
 Certain customer segments were more affected
 Regional differences highlight uneven impact
 
-# Recommendation #
+## Recommendation ##
 
 Test operational changes on smaller segments first
 Monitor key KPIs during rollout
