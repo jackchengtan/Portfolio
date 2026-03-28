@@ -2,25 +2,25 @@
 
 ![image](https://user-images.githubusercontent.com/77920592/199072945-1bdf34ab-bc60-49eb-bcf9-0f21fb9dbe5d.png)
 
-# Introduction #
+## Introduction ##
 
 Pizza Runner is an operations analytics case study focused on delivery performance, order composition, preparation time, customer modifications, and delivery profitability. I used SQL to clean messy operational data, calculate order and runner metrics, and produce insights that could improve delivery efficiency and customer experience.
 
-# Problem #
+## Problem ##
 
 Raw data contained:
 inconsistent formats (text distances, null values)
 no visibility into delivery efficiency
 unclear profitability
 
-# Insights #
+## Insights ##
 
 Data cleaning is essential before operational analysis
 Delivery efficiency varies significantly between runners
 Prep time increases with order size
 Extras and exclusions highlight customer preferences
 
-# Recommendation #
+## Recommendation ##
 
 Standardise data collection (critical)
 Optimise runner allocation during peak hours
