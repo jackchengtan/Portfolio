@@ -6,12 +6,24 @@
 
 Danny’s Diner is a customer analytics case study focused on restaurant purchasing behaviour and loyalty performance. I used SQL to analyse customer spend, visit frequency, favourite menu items, and the effect of a membership programme. The aim was to turn raw transactional data into practical recommendations for retention and loyalty design.
 
-# Problem Statement #
+# Problem #
 
-Which customers spend the most?
-Which menu items are most popular?
-What do customers buy before and after joining the loyalty programme?
-How should the restaurant structure its points system?
+The business lacked visibility into:
+customer spending habits
+product popularity
+effectiveness of loyalty programme
+
+# Insights #
+
+Certain menu items (e.g. ramen) dominate repeat purchases
+Loyal customers generate significantly higher lifetime value
+Purchase behaviour changes after joining membership
+
+# Recommendation #
+
+Expand loyalty programme with targeted incentives
+Promote high-frequency items to maximise revenue
+Personalise offers based on purchase history
 
 # SQL Scheme #
 
@@ -287,13 +299,3 @@ from rank_cte
 
 ![image](https://user-images.githubusercontent.com/77920592/192090956-f719eff7-e926-4f60-8ae7-6c47f877fa7c.png)
 
-
-# Key insight s# 
-
-Ramen appears to be the most frequently purchased menu item, making it the strongest candidate for promotion or product expansion.
-Customers A and B generated higher tracked loyalty value because they joined the membership programme and accumulated points.
-Pre-membership and post-membership behaviour can be segmented cleanly, which makes this dataset useful for designing targeted offers.
-
-# Recommendation #
-
-Test a simple loyalty incentive such as member-only bonus points or limited-time item multipliers to encourage repeat visits and larger basket sizes.
