@@ -2,24 +2,24 @@
 
 ![image](https://user-images.githubusercontent.com/77920592/199073813-1b1d6aa7-105d-4ab0-9dab-0444b0ef6095.png)
 
-# Introduction #
+## Introduction ##
 
 Danny’s Diner is a customer analytics case study focused on restaurant purchasing behaviour and loyalty performance. I used SQL to analyse customer spend, visit frequency, favourite menu items, and the effect of a membership programme. The aim was to turn raw transactional data into practical recommendations for retention and loyalty design.
 
-# Problem #
+## Problem ##
 
 The business lacked visibility into:
 customer spending habits
 product popularity
 effectiveness of loyalty programme
 
-# Insights #
+## Insights ##
 
 Certain menu items (e.g. ramen) dominate repeat purchases
 Loyal customers generate significantly higher lifetime value
 Purchase behaviour changes after joining membership
 
-# Recommendation #
+## Recommendation ##
 
 Expand loyalty programme with targeted incentives
 Promote high-frequency items to maximise revenue
