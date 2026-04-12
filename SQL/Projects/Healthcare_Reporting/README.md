@@ -230,8 +230,4 @@ Make sure:
 - (optional) DQ framework is installed and running
 
 ### 2. Run the reporting script
-Execute:
-
-```sql
--- Create reporting objects
--- (run the reporting SQL script)
+Execute sql
