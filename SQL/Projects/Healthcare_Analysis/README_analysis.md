@@ -1,21 +1,22 @@
-# Advanced Healthcare Analytics Layer (Forecasting, Scenario Modelling & Patient Segmentation)
+# Advanced Healthcare Analytics Layer (Demand Analysis, Forecasting, Scenario Modelling & Patient Segmentation)
 
 ## Overview
 This project extends a healthcare data platform with an **advanced analytics layer** built in **SQL Server**, designed to go beyond reporting and provide:
 
+- demand and operational strain analysis
 - demand forecasting
 - scenario simulation
 - patient segmentation and profiling
 
-It sits on top of the ETL, data quality, reporting, and alerting layers, transforming curated encounter data into **forward-looking insights and strategic decision support**.
+It sits on top of the ETL, data quality, reporting, and alerting layers, transforming curated encounter data into **both current-state insights and forward-looking decision support**.
 
-This layer demonstrates real-world analytics capabilities commonly used in healthcare, operations, and business intelligence environments:
+This layer demonstrates real-world analytics capabilities used in healthcare, operations, and business intelligence environments:
 
+- demand and utilisation analysis
 - time-series forecasting using SQL
 - scenario-based planning and simulation
 - behavioural and cost-based segmentation
-- demand and capacity modelling
-- decision-support analytics design
+- capacity and workload modelling
 
 This project uses **fully synthetic data** and is designed for portfolio demonstration.
 
@@ -29,9 +30,17 @@ A healthcare organisation has:
 - a reporting layer to track KPIs
 - an alerting system to monitor failures
 
-However, stakeholders also need **advanced analytics capabilities** to answer higher-value questions:
+However, stakeholders also need an **advanced analytics layer** to answer higher-value questions across four areas:
 
-### Forecasting
+### Demand Analysis
+- What is current daily demand?
+- Which days show overload, high pressure, or underutilisation?
+- Which practices are under the most strain?
+- Which clinicians have the highest workload?
+- Which diagnoses and encounter types are driving demand?
+- How do weekday and monthly demand patterns change over time?
+
+### Predictive Analysis
 - How many patients will we see next week?
 - Which days will experience peak demand?
 - Which practices will be under pressure tomorrow?
@@ -53,96 +62,202 @@ This project addresses these needs.
 ## Project Goal
 The goal is to simulate a **production-style advanced analytics layer** that supports:
 
+- demand and strain analysis
 - predictive planning
 - operational readiness
 - resource allocation
 - patient-level insight generation
 - strategic decision-making
 
-It demonstrates how a data platform evolves from **descriptive → diagnostic → predictive → prescriptive analytics**.
+It demonstrates how a data platform evolves from:
+
+**descriptive → diagnostic → predictive → prescriptive analytics**
 
 ---
 
 ## Architecture
 
 ### Schemas
-The advanced analytics layer introduces three new schemas:
+The advanced analytics layer brings together four analytical areas:
 
-- **fcst** → forecasting outputs
-- **scn** → scenario modelling
-- **seg** → patient segmentation
+- **ana** → demand analysis and operational strain  
+- **fcst** → forecasting outputs  
+- **scn** → scenario modelling  
+- **seg** → patient segmentation  
 
 These work alongside:
 
-- **ana** → core analysis layer
-- **rpt** → reporting layer
-- **dq** → data quality layer
-- **etl** → ingestion layer
-- **ops** → alerting layer
+- **etl** → ingestion layer  
+- **dq** → data quality layer  
+- **rpt** → reporting layer  
+- **ops** → alerting layer  
 
 ---
 
-# 1. Forecasting Layer (`fcst`)
+# 1. Demand Analysis Layer (`ana`)
 
 ## Purpose
-Provides short-term demand forecasts for:
+Provides a structured analytical view of current healthcare demand, utilisation, and operational strain.
 
-- total daily encounters
-- practice-level demand
+This layer explains:
+
+- how much demand is occurring today
+- where operational pressure is building
+- which practices and clinicians are under strain
+- which diagnoses and encounter types drive workload
+- how demand varies across time
+
+---
 
 ## Key Features
 
-### Time-Series Forecasting Logic
-Forecasts are based on:
+### Daily Demand Monitoring
+Tracks:
 
-- rolling 7-day average (recent trend)
-- rolling 30-day average (baseline)
-- trend factor (short-term vs long-term comparison)
-- weekday seasonality adjustment
+- total encounters
+- unique patients
+- unique practices
+- unique clinicians
+- total and average cost
+- rolling 7-day and 30-day baselines
+- day-on-day changes
+- demand classification:
+  - OVERLOAD
+  - HIGH_PRESSURE
+  - NORMAL
+  - UNDERUTILISED
 
-### Outputs
+---
 
-#### `fcst.daily_demand_forecast`
-- next 7 days of demand
-- forecast confidence range (upper/lower bound)
-- trend and seasonality factors
+### Practice Strain Analysis
+Measures:
 
-#### `fcst.practice_demand_forecast`
-- next-day forecast per practice
-- practice-level trend analysis
-- ranking by expected demand
+- average daily load
+- peak daily load
+- load variability
+- capacity band (low → very high)
+- strain risk level
+
+---
+
+### Clinician Workload Analysis
+Measures:
+
+- average daily workload
+- peak workload
+- workload variability
+- workload risk level
+- cross-practice coverage
+
+---
+
+### Diagnosis Pressure Analysis
+Identifies:
+
+- diagnoses driving highest volume
+- diagnoses driving highest cost
+- peak daily demand by diagnosis
+- pressure level by condition
+
+---
+
+### Encounter Type Mix Analysis
+Tracks:
+
+- demand by encounter type
+- share of total workload
+- dominant vs minor encounter types
+- mix-driven pressure
+
+---
+
+### Time-Based Demand Patterns
+Analyses:
+
+- weekday demand behaviour
+- monthly demand trends
+- temporal variation in utilisation
 
 ---
 
 ## Example Business Use Cases
 
-- identify upcoming high-demand days
-- plan staffing levels for next week
-- detect rising demand trends early
-- prepare for peak operational periods
+- identify overloaded days
+- detect early signs of operational strain
+- compare performance across practices
+- balance clinician workload
+- identify demand-driving conditions
+- support workforce planning
 
 ---
 
-# 2. Scenario Modelling Layer (`scn`)
+# 2. Forecasting Layer (`fcst`)
 
 ## Purpose
-Simulates **what-if scenarios** to understand how changes impact demand, cost, and capacity.
+Provides short-term demand forecasts for:
+
+- overall healthcare demand
+- practice-level activity
+
+---
+
+## Key Features
+
+### Forecasting Logic
+Based on:
+
+- rolling 7-day average (recent trend)
+- rolling 30-day average (baseline)
+- trend factor (short vs long-term comparison)
+- weekday seasonality adjustment
+
+---
+
+## Outputs
+
+### `fcst.daily_demand_forecast`
+- next 7 days demand forecast
+- confidence range (upper/lower bounds)
+- trend and seasonality indicators
+
+### `fcst.practice_demand_forecast`
+- next-day demand per practice
+- ranking by expected load
+- trend factor per practice
+
+---
+
+## Example Use Cases
+
+- plan staffing levels
+- anticipate peak days
+- detect rising demand trends
+- prepare for operational surges
+
+---
+
+# 3. Scenario Modelling Layer (`scn`)
+
+## Purpose
+Simulates **what-if scenarios** to evaluate the impact of operational changes.
+
+---
 
 ## Scenario Variables
 
 Each scenario can adjust:
 
-- demand multiplier (e.g. +20% demand)
-- cost multiplier (e.g. inflation)
-- clinician capacity multiplier (e.g. staff shortage)
-- encounter mix multiplier
+- demand multiplier
+- cost multiplier
+- clinician capacity multiplier
+- encounter mix
 
 ---
 
 ## Key Tables
 
 ### `scn.scenario_config`
-Defines scenario assumptions:
+Defines scenarios such as:
 
 - baseline
 - moderate pressure
@@ -153,19 +268,19 @@ Defines scenario assumptions:
 ---
 
 ### `scn.practice_scenario_impact`
-Practice-level simulation results:
+Practice-level simulation:
 
-- projected daily load
+- projected demand
 - projected cost
-- load increase vs baseline
+- % change vs baseline
 - pressure classification
 
 ---
 
 ### `scn.scenario_summary`
-High-level impact:
+High-level outputs:
 
-- projected total demand
+- projected demand
 - projected cost
 - cost per encounter
 - capacity pressure ratio
@@ -173,17 +288,17 @@ High-level impact:
 
 ---
 
-## Example Business Use Cases
+## Example Use Cases
 
-- capacity planning under demand surge
-- workforce planning (staff shortages)
-- cost impact modelling
-- risk assessment for operational overload
-- strategic decision support
+- workforce planning
+- surge preparedness
+- financial impact modelling
+- operational risk assessment
+- strategic planning
 
 ---
 
-# 3. Patient Segmentation Layer (`seg`)
+# 4. Patient Segmentation Layer (`seg`)
 
 ## Purpose
 Segments patients into meaningful groups based on:
@@ -198,74 +313,64 @@ Segments patients into meaningful groups based on:
 ## Key Features
 
 ### Metrics Calculated
-For each patient:
-
 - total encounters
 - total cost
 - average cost
-- number of active days
-- number of practices visited
-- number of clinicians seen
+- active days
+- practices visited
+- clinicians seen
 - diagnosis diversity
 - encounter type diversity
-- recency (days since last visit)
+- recency
 
 ---
 
 ### Segmentation Dimensions
 
-#### Utilisation Segment
-- High utilisation
-- Medium utilisation
-- Low utilisation
+#### Utilisation
+- High
+- Medium
+- Low
 
-#### Cost Segment
-- High cost
-- Medium cost
-- Low cost
+#### Cost
+- High
+- Medium
+- Low
 
-#### Complexity Segment
-- High complexity
-- Medium complexity
-- Low complexity
-
----
-
-### Final Patient Segments
-Examples:
-
-- `HIGH_NEEDS_HIGH_COST`
-- `FREQUENT_ATTENDER`
-- `HIGH_COST_CASE`
-- `COMPLEX_MULTI_TOUCH`
-- `RECENT_LOW_TOUCH`
-- `STABLE_STANDARD`
+#### Complexity
+- High
+- Medium
+- Low
 
 ---
 
-## Key Outputs
+### Final Segments
 
-### `seg.patient_segmentation`
-Full patient-level segmentation dataset
-
-### `seg.vw_patient_segment_summary`
-Aggregated view of segments
-
-### `seg.vw_high_value_patients`
-Top high-cost / high-complexity patients
-
-### `seg.vw_patient_segment_distribution`
-Distribution across utilisation, cost, and complexity
+- HIGH_NEEDS_HIGH_COST  
+- FREQUENT_ATTENDER  
+- HIGH_COST_CASE  
+- COMPLEX_MULTI_TOUCH  
+- RECENT_LOW_TOUCH  
+- STABLE_STANDARD  
 
 ---
 
-## Example Business Use Cases
+## Outputs
 
-- identify high-cost patient cohorts
-- target frequent attenders for intervention
-- prioritise complex patients
-- improve care pathway planning
-- optimise resource allocation
+- `seg.patient_segmentation`
+- `seg.vw_patient_segment_summary`
+- `seg.vw_high_value_patients`
+- `seg.vw_patient_segment_distribution`
+
+---
+
+## Example Use Cases
+
+- identify high-cost patients
+- target frequent attenders
+- prioritise complex cases
+- optimise care pathways
+- improve resource allocation
 
 ---
 
@@ -275,9 +380,9 @@ Distribution across utilisation, cost, and complexity
 2. DQ validates data quality  
 3. Reporting produces KPIs  
 4. Alerting monitors issues  
-5. Analysis explains demand patterns  
+5. Demand analysis explains current utilisation and strain  
 6. Forecasting predicts future demand  
-7. Scenario modelling simulates changes  
+7. Scenario modelling simulates operational change  
 8. Segmentation identifies patient groups  
 
 ---
@@ -285,21 +390,20 @@ Distribution across utilisation, cost, and complexity
 # How to Run
 
 ### Step 1: Ensure prerequisites
-Make sure these layers exist:
-
-- ETL (`dbo.patient_encounter`)
-- DQ (`dq`)
-- Reporting (`rpt`)
-- Analysis (`ana`)
+- ETL layer (`dbo.patient_encounter`)
+- DQ layer (`dq`)
+- Reporting layer (`rpt`)
+- Analysis layer (`ana`)
 
 ---
 
 ### Step 2: Run scripts
 Execute:
 
-- forecasting script
-- scenario modelling script
-- segmentation script
+- analysis layer
+- forecasting layer
+- scenario modelling layer
+- segmentation layer
 
 ---
 
