@@ -1,105 +1,84 @@
-#  Business Process Automation Portfolio  
-Power Automate | Power Apps | Excel | SharePoint  
+#  AI Training & Copilot Adoption Workshop  
+Microsoft 365 Copilot | AI Productivity | Business Use Cases  
 
-This repository showcases a collection of real-world automation projects designed to improve business efficiency, reduce manual workload, and enable data-driven decision-making.
+This project showcases the design and delivery of an AI training programme focused on improving employee productivity using Microsoft 365 Copilot.
 
 ---
 
 ##  Overview  
 
-I specialise in building automation solutions using Microsoft Power Platform, combining workflow automation with structured data processing and analysis.
+Designed and delivered an internal AI training workshop to support the rollout of Microsoft 365 Copilot across departments.  
 
-Across these projects, I focused on:
-- Automating repetitive business processes  
-- Designing data-driven workflows  
-- Improving data visibility and reporting  
-- Reducing manual effort and operational inefficiencies  
+The training focused on enabling employees to effectively use AI tools in real business scenarios, improving productivity, and building AI literacy within the organisation. :contentReference[oaicite:0]{index=0}  
 
 ---
 
-##  Key Results  
+##  Objectives  
 
--  Up to **80–95% reduction** in manual effort  
--  Up to **100 minutes saved per process**  
--  Improved **data accuracy and process visibility**  
--  Delivered **end-to-end automation across multiple business functions**  
-
----
-
-##  Projects  
-
-### 1. HR Onboarding & Employee Lifecycle Automation  
-Automated onboarding, monthly review, and probation processes using Power Automate and SharePoint.
-
-**Highlights:**
-- Multi-stage approval workflows (HR / IT / Manager)  
-- Lifecycle tracking and status automation  
-- Real-time escalation and failure handling  
+- Drive adoption of Microsoft 365 Copilot across business users  
+- Improve daily productivity through AI-assisted workflows  
+- Build practical understanding of AI capabilities and limitations  
+- Encourage real-world application of AI in business scenarios  
 
 ---
 
-### 2. Rebate Tracking & Reporting Automation  
-Built a data-driven workflow to calculate total profit and rebate eligibility from multiple Excel sources.
+##  Key Content  
 
-**Highlights:**
-- Data aggregation across issued and unissued orders  
-- Business logic for rebate tier calculation  
-- Automated reporting for sales team  
+### AI Fundamentals  
+- What AI can and cannot do  
+- Limitations and risks (accuracy, context understanding)  
 
----
+### Copilot Capabilities  
+- Document summarisation  
+- Translation and content extraction  
+- Email drafting and document generation  
+- Microsoft 365 integration (Excel, Outlook, Teams)  
 
-### 3. Supplier File Distribution Automation  
-Automated supplier communication by distributing files based on structured naming and supplier data.
+### Prompt Engineering  
+- Task definition and role assignment  
+- Structuring high-quality prompts  
+- Improving output through iterative refinement  
 
-**Highlights:**
-- Metadata extraction from file names  
-- Data matching with supplier records  
-- Automated email delivery with attachments  
-
----
-
-### 4. Overstock Matching & Sales Order Analysis  
-Developed a data processing workflow to identify matching products between sales orders and inventory.
-
-**Highlights:**
-- Data cleaning and standardisation  
-- Record-level comparison and matching logic  
-- Structured output report generation  
+### Practical Use Cases  
+- Rebate analysis automation  
+- Document extraction and standardisation  
+- Market intelligence and data analysis  
 
 ---
 
-### 5. Supplier Document Standardisation Automation  
-Ensured consistent branding and formatting across supplier documents.
+##  Approach  
 
-**Highlights:**
-- Automated document transformation  
-- Enforced naming and formatting standards  
-- Improved compliance and consistency  
-
----
-
-### 6. Automated File Update Notification System  
-Implemented real-time notifications for new file updates in project folders.
-
-**Highlights:**
-- Metadata extraction (project, folder, file)  
-- Automated notification with attachments  
-- Improved collaboration and visibility  
+- Conducted **hands-on workshops** with real business scenarios  
+- Designed **interactive exercises** to reinforce learning  
+- Delivered training in structured phases (awareness → adoption → application)  
+- Encouraged continuous usage and feedback collection  
 
 ---
 
-##  Skills Demonstrated  
+##  Business Impact  
 
-- Power Automate (workflow automation, approvals, triggers)  
-- Power Apps (process digitisation)  
-- Excel automation & data processing  
-- SharePoint integration  
-- Data cleaning, transformation, and matching  
-- Business process analysis and optimisation  
+- Target: ≥5 uses of Copilot per user per week  
+- Estimated productivity gain: **~25 minutes saved per day per user**  
+- Improved efficiency in:
+  - Document processing  
+  - Email communication  
+  - Data analysis and reporting  
+
+- Increased AI adoption and awareness across departments  
 
 ---
 
-##  Additional Resources  
+##  Key Takeaways  
+
+- AI is most effective when combined with clear task definition and structured prompts  
+- Human judgment remains critical for validation and decision-making  
+- Practical, real-world use cases drive successful AI adoption  
+
+---
+
+##  Resources  
+
+The full training materials and workshop slides are available in this repository.  
 
 Feel free to explore and download the documents for more details.
 
