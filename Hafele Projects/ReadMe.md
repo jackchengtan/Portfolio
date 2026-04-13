@@ -105,11 +105,3 @@ Feel free to explore and download the documents for more details.
 
 ---
 
-##  Contact  
-
-I am currently seeking entry-level roles in:
-- Automation / Power Platform  
-- Data Analyst / Reporting Analyst  
-- Business / Process Analyst  
-
-If you’re hiring or open to connecting, feel free to reach out!
