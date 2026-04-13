@@ -1,15 +1,4 @@
-# Clinical Trial Analytics Project (SQL Server)
+# Automated File Update Notification
 
 ## Overview
-This project is a **healthcare-inspired clinical trial analytics layer** built in **SQL Server**, designed to simulate a more realistic trial analysis workflow on top of synthetic study data.
-
-It moves beyond simple summary reporting and includes:
-
-- enrollment and cohort structure
-- longitudinal outcome analysis
-- baseline vs follow-up improvement logic
-- responder analysis
-- retention and completion analysis
-- subgroup treatment effect analysis
-- resource utilisation and cost analysis
-- cost-effectiveness outputs
+An automated file update notification workflow using Power Automate, triggered by new file uploads in SharePoint. Implemented logic to extract project metadata and distribute updates with attachments to relevant stakeholders. Reduced manual communication effort by ~90–95% and saved ~19 minutes per update. Improved real-time visibility, reduced missed notifications, and enhanced cross-team collaboration efficiency.
