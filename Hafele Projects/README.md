@@ -1,11 +1,11 @@
-# 🚀 Business Process Automation Portfolio  
+# Business Process Automation Portfolio  
 Power Automate | Power Apps | Excel | SharePoint  
 
 This repository showcases a collection of real-world automation projects designed to improve business efficiency, reduce manual workload, and enable data-driven decision-making.
 
 ---
 
-## 🔍 Overview  
+## Overview  
 
 I specialise in building automation solutions using Microsoft Power Platform, combining workflow automation with structured data processing and analysis.
 
@@ -17,7 +17,7 @@ Across these projects, I focused on:
 
 ---
 
-## 📊 Key Results  
+## Key Results  
 
 - ⏱️ Up to **80–95% reduction** in manual effort  
 - 🕒 Up to **100 minutes saved per process**  
@@ -26,7 +26,7 @@ Across these projects, I focused on:
 
 ---
 
-## 📁 Projects  
+## Projects  
 
 ### 1. HR Onboarding & Employee Lifecycle Automation  
 Automated onboarding, monthly review, and probation processes using Power Automate and SharePoint.
@@ -88,7 +88,7 @@ Implemented real-time notifications for new file updates in project folders.
 
 ---
 
-## 🧠 Skills Demonstrated  
+## Skills Demonstrated  
 
 - Power Automate (workflow automation, approvals, triggers)  
 - Power Apps (process digitisation)  
@@ -99,7 +99,7 @@ Implemented real-time notifications for new file updates in project folders.
 
 ---
 
-## 📂 Additional Resources  
+## Additional Resources  
 
 Feel free to explore and download the documents for more details.
 
